@@ -5,9 +5,12 @@ import AllMeetupsPage from "./pages/AllMeetUps";
 import NewMeetupsPage from "./pages/NewMeetUp";
 import FavoritesPage from "./pages/Favorites";
 
+import MainNav from "./components/layout/MainNav";
+
 function App() {
   return (
     <div>
+      <MainNav />
       <Routes>
         <Route path="/" element={<AllMeetupsPage />} />
         <Route path="/new-meetup" element={<NewMeetupsPage />} />
